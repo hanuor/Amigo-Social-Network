@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="17dp"
+    android:layout_marginBottom="17dp"
+    android:background="#1A000000"
+    android:layout_height="wrap_content"
+    >
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="#1A000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+
+
+            android:id="@+id/comp"
+            android:layout_height="match_parent">    <ImageView
+            android:id="@+id/imageCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#1A000000"
+            android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/intro_fragcolor"
+                    android:layout_gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/intro_background"
+                android:layout_width="match_parent"
+                android:background="#1A000000"
+                android:layout_height="match_parent">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:text="Open Gallery"
+    android:id="@+id/opengal"
+    android:textColor="#FFFFFF"
+    android:fontFamily="sans-serif-light"
+    android:background="@drawable/buttonbackground"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentEnd="true" />
+<Button
+    android:textAllCaps="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="11dp"
+    android:layout_marginTop="11dp"
+    android:fontFamily="sans-serif-light"
+    android:layout_below="@+id/opengal"
+    android:id="@+id/opencam"
+    android:background="@drawable/buttonbackground"
+    android:text="Capture from Camera"
+    android:textColor="#FFFFFF"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:id="@+id/butcancel"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#FFFFFF"
+                    android:text="  Cancel  "
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/opencam"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

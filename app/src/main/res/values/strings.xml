@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Amigo</string>
+    <string name="opendrawer">Open</string>
+    <string name="pref_previously_started">Previously Started</string>
+    <string name="ope">suner</string>
+    <string name="closedrawer">Close</string>
+    <string name="facebook_app_id">1520912694872442</string>
+    <string name="title_activity_list_users_activtiy">ListUsersActivtiy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

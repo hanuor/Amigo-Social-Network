@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="1dp"
+    android:paddingLeft="1dp">
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/txtSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textColor="@android:color/black" android:textStyle="bold"/>
+
+        <!--  <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:id="@+id/profile"
+            />-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:padding="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/nq"
+            android:layout_alignParentTop="true"
+            android:id="@+id/relativeLayout"
+            >
+
+            <TextView
+                android:id="@+id/txtMessage"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:text="Hello"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

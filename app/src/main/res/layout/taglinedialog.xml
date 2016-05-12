@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#626262"
+        android:text="Tagline"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Enter your status"
+        android:layout_margin="3dp"
+        android:textColor="#9e9e9e"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        android:layout_margin="3dp"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="11dp"
+        android:textColor="#757575"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@+id/et"
+        android:textAllCaps="false"
+        android:layout_marginLeft="7dp"
+        android:layout_alignStart="@+id/et" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginRight="7dp"
+        android:background="#FFFFFF"
+        android:textAllCaps="false"
+        android:textColor="#757575"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

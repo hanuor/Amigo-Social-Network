@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#212121"
+    android:layout_centerInParent="true">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:src="@drawable/default_pic"
+        android:clickable="true"
+        app:civ_border_width="0.3dp"
+        app:civ_border_color="#FFFFFF"
+
+        android:layout_height="60dp"
+        android:id="@+id/userimage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="7dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#EEEEEE"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/userimage"
+        android:id="@+id/firstname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overall"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/firstname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="..."
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:id="@+id/amigoid"
+        android:layout_below="@+id/firstname"
+        android:layout_alignStart="@+id/firstname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="..."
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:id="@+id/overallcount"
+        android:layout_below="@+id/firstname"
+        android:layout_alignEnd="@+id/textView5" />
+</RelativeLayout>
+</RelativeLayout>

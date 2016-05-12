@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingTop="24dp"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transcriptMode="alwaysScroll"
+        android:layout_above="@+id/divider"
+        android:padding="0dip"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true" tools:listitem="@layout/message_left"/>
+
+    <RelativeLayout
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+
+        android:layout_above="@+id/relSendMessage" />
+
+    <RelativeLayout
+        android:id="@+id/relSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:layout_marginBottom="-4dp"
+            android:id="@+id/messageBodyField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/sendButton"
+            android:background="@android:color/white"
+            android:layout_alignBottom="@+id/sendButton"
+            android:layout_toLeftOf="@+id/sendButton"/>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:text="send" />
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/messageLoading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:loading_width="5dp"
+
+            android:visibility="gone"
+            app:loading_color="#1E88E5"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+android:id="@+id/relItem"
+    android:clickable="true"
+android:background="@drawable/custom_bg"
+    android:layout_height="49dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:id="@+id/iconimage"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SCIENCE"
+    android:textColor="#FFFFFF"
+    android:fontFamily="sans-serif-light"
+    android:textSize="15sp"
+    android:layout_marginLeft="17dp"
+    android:id="@+id/icondetails"
+    android:layout_toRightOf="@+id/iconimage"
+   android:layout_centerVertical="true"
+  />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="chap.hanuor.com.chatapp.CommentsSection">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/res">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_stat_chat"
+        android:layout_marginLeft="8dp"
+        android:minHeight="0dp"
+        android:clickable="true"
+        android:minWidth="0dp"
+        android:id="@+id/im"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/count"
+        android:layout_marginLeft="2dp"
+        android:text=""
+        android:layout_toRightOf="@+id/im"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#E91E63"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:id="@+id/commenter"
+        android:layout_marginLeft="2dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@+id/count"
+        android:textColor="#E91E63"/>
+    </RelativeLayout>
+        <!--
+    <View
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="9dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0.4dp"
+        android:id="@+id/line10"
+        android:background="#424242"
+        android:layout_below="@+id/count"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/res"
+        android:background="#000000"
+        android:fitsSystemWindows="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:fadeScrollbars="true"
+        android:id="@+id/commentrecycler"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_stat_plus"
+        android:id="@+id/buttondss"
+        android:clickable="true"
+        android:layout_marginRight="11dp"
+        android:layout_above="@+id/commentrecycler"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

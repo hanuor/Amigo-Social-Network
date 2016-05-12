@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="160dp"
+    android:paddingBottom="7dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingBottom="10dp">
+
+    <com.yayandroid.parallaxrecyclerview.ParallaxImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <View
+      android:layout_height="match_parent"
+        android:layout_width="match_parent"
+      android:background="@drawable/tr"
+        android:layout_gravity="center" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20sp"
+        android:text="Hello"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="101dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/statusText"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="3dp"
+            android:ellipsize="marquee"
+            android:layout_below="@+id/label"
+            android:layout_alignStart="@+id/label" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:clickable="true"
+            android:id="@+id/optionsSingle"
+            android:background="@drawable/ic_more"
+            android:minWidth="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:background="@drawable/border"
+        android:layout_marginLeft="10dp"
+        android:elevation="5dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left|bottom" />
+
+
+</RelativeLayout>

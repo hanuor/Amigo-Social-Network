@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="chap.hanuor.com.chatapp.Settings">
+    <FrameLayout
+        android:layout_width="match_parent"
+
+
+        android:id="@+id/comp"
+        android:layout_height="match_parent">    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/imageCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blue"
+        android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/intro_fragcolor"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/intro_background"
+            android:layout_width="match_parent"
+            android:paddingTop="24dp"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+
+                app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@android:color/transparent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notoriety Window"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="19sp"
+                    android:id="@+id/header"
+
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentTop="true"/>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:id="@+id/Notorietyinfo"
+
+                android:layout_height="match_parent">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card1"
+                    android:elevation="7dp"
+android:visibility="visible"
+                    android:layout_margin="5dp"
+
+                    app:cardBackgroundColor="#00000000"
+                    android:background="#00000000">
+<RelativeLayout
+    android:background="#00000000"
+    android:layout_margin="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headerNo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Social Notoriety"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rel1"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/headerNo"
+        android:layout_marginLeft="5dp"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mano"
+         android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_stat_man290"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:text="Initial vote : "
+        android:id="@+id/yourvote"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/mano" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+android:layout_marginRight="7dp"
+        android:id="@+id/your"
+        android:layout_alignTop="@+id/yourvote"
+        android:layout_toEndOf="@+id/yourvote" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:id="@+id/icon"
+        android:minHeight="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+
+
+        android:layout_toEndOf="@+id/your" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="11dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/manop"
+            android:background="@drawable/ic_stat_movies12"
+            android:layout_alignBottom="@+id/pub"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:textSize="17sp"
+            android:layout_toRightOf="@+id/manop"
+            android:layout_margin="5dp"
+            android:id="@+id/pub"
+            android:text="Public Vote : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="7dp"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/publicyour"
+            android:layout_alignTop="@+id/pub"
+            android:layout_toEndOf="@+id/pub" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:id="@+id/pubicon"
+            android:minHeight="0dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+
+
+            android:layout_toEndOf="@+id/publicyour" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countpub"
+
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:text="..."
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/publicyour"
+            android:layout_toEndOf="@+id/pubicon" />
+        <TextSwitcher
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ts"
+
+            android:layout_margin="7dp"
+            android:layout_below="@+id/pub"></TextSwitcher>
+    </RelativeLayout>
+
+</RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:id="@+id/card2"
+                    android:layout_below="@+id/card1"
+                    android:elevation="7dp"
+                    android:visibility="visible"
+                    android:layout_margin="5dp"
+
+                    app:cardBackgroundColor="#00000000"
+                    android:background="#00000000">
+                    <RelativeLayout
+                        android:background="#00000000"
+                        android:layout_margin="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rel2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_margin="11dp"
+
+                            android:layout_height="wrap_content">
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rel2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="11dp"
+                            android:id="@+id/relativeLayout2">
+                            </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Social Quotient"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/socialquo"
+
+                            android:layout_alignTop="@+id/rel2"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+android:text="Notoriety Points : "
+android:textSize="17sp"
+
+android:textColor="#FFFFFF"
+android:fontFamily="sans-serif-light"
+android:id="@+id/notorietypoints"
+                            android:layout_below="@+id/socialquo"
+                            android:layout_toEndOf="@+id/relativeLayout2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Overall :"
+                            android:textSize="17sp"
+                            android:id="@+id/overall"
+                            android:layout_marginTop="11dp"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_below="@+id/notorietypoints"
+                            android:layout_alignStart="@+id/notorietypoints" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="..."
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="7dp"
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/overallrating"
+                            android:layout_alignTop="@+id/overall"
+                            android:layout_toEndOf="@+id/overall" />
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/shimmy"
+                            android:layout_alignBottom="@+id/overallrating"
+                            android:layout_toEndOf="@+id/overallrating"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/arrowoverall"
+                                    android:minHeight="0dp"
+                                    android:minWidth="0dp"
+
+
+                                    />
+                            </RelativeLayout>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="..."
+                            android:layout_marginLeft="4dp"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/diffy"
+                            android:layout_alignBottom="@+id/shimmy"
+                            android:layout_toEndOf="@+id/shimmy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="..."
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/np"
+                            android:layout_above="@+id/overall"
+                            android:layout_toEndOf="@+id/notorietypoints" />
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/shimmerpoints"
+                            android:layout_alignBottom="@+id/np"
+                            android:layout_toEndOf="@+id/np"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/arrow"
+                            android:minHeight="0dp"
+                            android:minWidth="0dp"
+
+
+                             />
+                            </RelativeLayout>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="..."
+                            android:layout_marginLeft="4dp"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/diff"
+                            android:layout_alignBottom="@+id/shimmerpoints"
+                            android:layout_toEndOf="@+id/shimmerpoints" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <com.yayandroid.parallaxrecyclerview.ParallaxRecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/usersListView"
+android:visibility="gone"
+                android:layout_below="@+id/toolbar"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

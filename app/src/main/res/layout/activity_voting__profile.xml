@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEEEEE"
+    android:paddingTop="24dp"
+    android:orientation="vertical">
+
+    <!--<com.victor.loading.newton.NewtonCradleLoading
+        android:id="@+id/newton_cradle_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:visibility="gone"
+
+        android:layout_centerInParent="true" />-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#333333"
+        android:orientation="vertical"
+        android:id="@+id/rv1"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/profilelayout"
+            android:layout_centerHorizontal="true">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv"
+                android:layout_width="150dp"
+
+
+                android:layout_height="150dp"
+                android:src="@drawable/reg"
+                android:clickable="true"
+
+
+                />
+            <com.victor.loading.rotate.RotateLoading
+                android:id="@+id/rotateloading"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:loading_width="5dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                app:loading_color="#1E88E5" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profilelayout"
+            android:text="Erica Sunn"
+            android:layout_marginBottom="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:text="#99F115BA"
+            android:layout_below="@+id/name"
+            android:textSize="14sp"
+            android:textStyle="normal"
+
+
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:background="#333333"
+            android:textColor="#FFFFFF"
+            android:id="@+id/editimage"
+            android:layout_margin="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personview"
+        android:layout_below="@+id/rv1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Chat Buddies?Send her a request"
+            android:textSize="22dp"
+            android:id="@+id/personid"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:id="@+id/addfriendbut"
+            android:layout_centerInParent="true"
+            android:background="@drawable/addfriend"
+            android:layout_below="@+id/personid"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adoredview"
+        android:layout_below="@+id/personview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What do think of them"
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/adoredid"/>
+
+        <ImageView
+            android:src="@android:drawable/divider_horizontal_bright"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:scaleType="fitXY"
+            android:background="#BDBDBD"
+
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/adoredid"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoview"
+        android:layout_below="@+id/adoredview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Information"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

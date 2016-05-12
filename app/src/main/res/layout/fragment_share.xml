@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="chap.hanuor.com.chatapp.ProfileFragments.ShareFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/sharenumber"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#E91E63"
+        android:textSize="17dp"
+        />
+    <TextView
+        android:textColor="#E91E63"
+        android:layout_toRightOf="@+id/sharenumber"
+        android:id="@+id/shareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shares"
+        android:textSize="17sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_stat_share15"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:layout_marginRight="11dp"
+        android:id="@+id/sharebut"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_marginTop="4dp"
+        android:layout_margin="4dp"
+        android:text=""
+        android:textColor="#E91E63"
+        android:id="@+id/shareIds"
+        android:layout_below="@+id/sharebut"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

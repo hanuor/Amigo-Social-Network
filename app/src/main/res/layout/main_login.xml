@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+
+
+            android:id="@+id/comp"
+            android:layout_height="match_parent">
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/imageCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/blue"
+                android:scaleType="centerCrop"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/intro_fragcolor"
+                    android:layout_gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/hack"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="Come again soon :)"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/intro_background"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_amigo_icon"
+                    android:gravity="center"
+android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="top|center"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:textSize="27sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="61dp" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/white"
+android:layout_below="@+id/title"
+                    android:id="@+id/subt"
+                    android:layout_height="wrap_content"
+                    android:text="An enhanced social network"/>
+
+                <!--<android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/etusername"
+                    android:layout_margin="11dp"
+                    android:layout_below="@+id/subtitle"
+                    >-->
+                    <EditText android:id="@+id/amigoname"
+                        android:layout_width="match_parent"
+                        android:drawablePadding="7dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColorHint="#59FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:drawableLeft="@drawable/ic_stat_user158"
+                        android:background="@drawable/editext_drawable"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@+id/subt"
+                        android:inputType="textPersonName"
+                        android:hint="Username" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+             <!--   <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etemail"
+                    android:id="@+id/etpass"
+
+                    android:layout_margin="11dp">-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/pes"
+                    android:layout_below="@+id/amigoname"
+                    android:layout_height="wrap_content">
+                    <EditText android:id="@+id/input_password"
+                        android:layout_width="fill_parent"
+                        android:drawableLeft="@drawable/ic_stat_password10"
+                        android:textStyle="bold"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginLeft="11dp"
+
+                        android:background="@drawable/editext_drawable"
+                        android:backgroundTint="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:drawablePadding="7dp"
+
+
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#59FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="Password"/>
+
+                </RelativeLayout>
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbackground"
+                    android:text="Sign In"
+                    android:textAllCaps="false"
+                    android:id="@+id/signinButton"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/pes"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A6FFFFFF"
+                    android:text="or"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginTop="21dp"
+                    android:id="@+id/or"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="19sp"
+                    android:layout_below="@+id/signinButton"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbackground"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="21dp"
+                    android:id="@+id/signupButton"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/or"
+                    android:layout_centerHorizontal="true" />
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:padding="11dp"
+                    android:textAllCaps="false"
+    android:textColor="#FFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:text="Facebook Login"
+                    android:background="@drawable/facebookdrawable"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/signupButton"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016 Amigo.Hanuor"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="11sp"
+                    android:textColor="#66FFFFFF"
+                    android:id="@+id/textView11"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+

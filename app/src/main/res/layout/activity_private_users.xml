@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="24dp"
+    tools:context="chap.hanuor.com.chatapp.PrivateUsers">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/settings_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+
+        app:layout_scrollFlags="scroll|enterAlways"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random Chat"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+
+
+            android:id="@+id/home_toolbar_title"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF" />
+
+    </android.support.v7.widget.Toolbar>
+<android.support.v7.widget.RecyclerView
+    android:layout_below="@+id/settings_tool_bar"
+    android:layout_width="match_parent"
+    android:id="@+id/rec_view"
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+
+    <com.victor.loading.newton.NewtonCradleLoading
+        android:id="@+id/newton_cradle_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

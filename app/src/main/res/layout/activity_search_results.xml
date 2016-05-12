@@ -1,0 +1,183 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="chap.hanuor.com.chatapp.Settings">
+    <FrameLayout
+        android:layout_width="match_parent"
+
+
+        android:id="@+id/comp"
+        android:layout_height="match_parent">    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/imageCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blue"
+        android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/intro_fragcolor"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    >
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:paddingTop="24dp"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/transparent">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/result"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="7dp"
+        android:textColor="#BDBDBD"
+        android:layout_height="wrap_content"
+        android:text="Search result for: " />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar"
+    android:layout_toRightOf="@+id/result"
+    android:id="@+id/res"
+    android:layout_margin="7dp"
+    android:textColor="#FFFFFF"
+    android:text=""/>
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:paddingBottom="7dp"
+android:clickable="true"
+        android:visibility="visible"
+        android:id="@+id/relLay"
+        android:layout_below="@+id/result"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+
+            android:layout_height="200dp"
+            android:paddingBottom="10dp">
+
+            <com.yayandroid.parallaxrecyclerview.ParallaxImageView
+                android:id="@+id/backgroundImage"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/tr"
+                android:layout_gravity="center" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:text="..."
+                    android:textColor="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="101dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Social Notoriety"
+                    android:textSize="15sp"
+
+                    android:id="@+id/statusText"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_below="@+id/label"
+                    android:layout_alignStart="@+id/label" />
+                                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                                    android:layout_marginTop="7dp"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+                                    android:fontFamily="sans-serif-light"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/your"
+                                    android:layout_below="@+id/statusText"
+                                    android:layout_alignStart="@+id/statusText" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="0dp"
+                    android:id="@+id/icon"
+
+                    android:minHeight="0dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+
+
+                    android:layout_alignBottom="@+id/your"
+                    android:layout_toEndOf="@+id/your" />
+
+
+
+
+            </RelativeLayout>
+        </FrameLayout>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="10dp"
+            android:elevation="11dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left|bottom" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+    </FrameLayout>
+</RelativeLayout>

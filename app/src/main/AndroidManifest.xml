@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="chap.hanuor.com.chatapp"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".MainActivity"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListUsersActivity">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <service android:name=".MessageService" />
+
+        <activity android:name=".RandomChat" />
+        <activity android:name=".FriendsProfileActivty" />
+        <activity android:name=".MessagingActivity" />
+        <activity android:name=".ProfileView" />
+        <activity android:name=".Voting_Profile" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".FriendMessagingActivity" />
+        <activity android:name=".AddStatus" />
+        <activity android:name=".CommentsSection" />
+        <activity android:name=".YourProfile" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".Comments_Write" />
+        <activity android:name=".SocialNotorietyActivity" />
+        <activity android:name=".ParallelSocialNotoriety" />
+        <activity android:name=".SearchResultsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".Settings" />
+        <activity android:name=".Help" />
+        <activity android:name=".NotorietyLeaderBoard"></activity>
+    </application>
+
+</manifest>

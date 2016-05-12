@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="7dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#E91E63"
+        android:text="Medium Text"
+        android:clickable="true"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="sans-serif-light"
+        android:src="@drawable/profileshadow"
+        android:id="@+id/singleton"
+        android:layout_marginRight="4dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:text="Friend Request"
+        android:id="@+id/textView2"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="@drawable/buttonbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reject"
+        android:layout_marginLeft="7dp"
+        android:textAllCaps="false"
+        android:textSize="11dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/rejectreq"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:layout_marginRight="7dp"
+        android:textAllCaps="false"
+        android:textSize="11dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:background="@drawable/buttonbackground"
+        android:id="@+id/acceptreq"
+        android:layout_alignTop="@+id/rejectreq"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
